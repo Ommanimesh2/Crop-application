@@ -1,22 +1,30 @@
 import React from 'react'
 import './Leftsidebar.css'
+import Popup from 'reactjs-popup';
 
 export default function Leftsidebar() {
   return (
     <div className="container">
       <div className="infocontainer">
         < div className="areaField">
-          <div className="img"></div>
           <div className="infos">
-           <div className="field">Selected Field</div> 
-           <div className="field">Area</div> 
-           <div className="field">Coordinates</div>
+           <div className="field">Selected Field :</div> 
+           <div className="field">Area :</div> 
+           <div className="field">Polygon :</div>
              
           </div>
           </div>
          
           <div className="moreinfo">
-           <button className="info-btn">More Info</button>
+            <div className="moredetails">
+              {/* add details */}
+            </div>
+            <Popup trigger={<button className="info-btn">More Info</button>} position="top centre" >
+            <div className="popup-container">
+            co_ordinates-[ ]
+            </div>
+          </Popup>
+           
           </div>
           </div>
         <div className="updateInfo">

@@ -1,17 +1,20 @@
 body{
 background-color: rgb(15, 15, 16);
 color: rgb(241, 231, 231);
+
 }
 .container{
     padding-left: 2vw;
-    height: 48vw;
+    height: 46vw;
     width: 25%;
 }
 .infocontainer{
     width: 20vw;
-    height: 45%;
+    height: 20vw;
     background-color: #273037;
-    margin-top: 1vw;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    border-radius: 0.5vw;
 }
 .img{
     height: 4vw;
@@ -21,10 +24,11 @@ color: rgb(241, 231, 231);
 .areaField{
     display: flex;
     flex-direction: row;
-    padding-top: 5vw;
+    padding-top: 2vw;
     height: 6vw;
     width: 20vw;
     background-color: #273037;
+    
 }
 .infos{
     padding-left: 0.5vw;
@@ -32,28 +36,43 @@ color: rgb(241, 231, 231);
     flex-direction: column;
     height: 6vw;
     background-color: #273037;
+    justify-content: space-between;
+}
+.moredetails{
+    height: 8vw;
 }
 .field{
 width: 14vw;
 background-color: #273037;
 }
 .updateInfo{
-    background-color: #273037;
-    height: 40%;
+    border-radius: 0.5vw;
+    background-color:#273037;
+    height: 20vw;
     width: 18vw;
     margin-top: 2vw;
     padding-left: 2vw;
     display: flex;
     flex-direction:  column;
+    padding-top: 0.5vw;
 }
 .moreinfo{
-    height: 11vw;
-    background-color: #273037;
+    height: 9vw;
+    background-color:  #273037;
 }
 .info-btn{
-background-color: #2984FF;
-
-margin-left: 2vw;
+    color: azure;
+   margin-left: 6vw;
+    width: 6vw;
+    height: 2.5vw;
+    background-color: #2984FF;
+    cursor: pointer;
+    border-radius: 0.3vw;
+    border-radius: 0.5vw;
+}
+.info-btn:hover{
+    background-color: #1a72e4;
+    font-weight: bolder;
 }
 .textinput{
     background-color: azure;
@@ -72,8 +91,21 @@ margin-top: 1vw;
     color: #273037;
 }
 .update-btn{
-    background-color: azure;
+    color: azure;
 width: 5vw;
-height: 2vw;
+height: 2.5vw;
 background-color: #2984FF;
+cursor: pointer;
+border-radius: 0.3vw;
+}
+.update-btn:hover{
+    background-color: #1a72e4;
+    font-weight: bolder;
+}
+.popup-container{
+    height: 5vw;
+    width: 14vw;
+    background-color: #173b56;
+    overflow-y: scroll;
+    scrollbar-color: #6969dd;
 }

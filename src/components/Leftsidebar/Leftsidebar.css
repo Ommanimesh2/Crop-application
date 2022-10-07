@@ -1,0 +1,79 @@
+body{
+background-color: rgb(15, 15, 16);
+color: rgb(241, 231, 231);
+}
+.container{
+    padding-left: 2vw;
+    height: 48vw;
+    width: 25%;
+}
+.infocontainer{
+    width: 20vw;
+    height: 45%;
+    background-color: #273037;
+    margin-top: 1vw;
+}
+.img{
+    height: 4vw;
+    width: 6vw;
+    border: 0.3vw solid white;
+}
+.areaField{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5vw;
+    height: 6vw;
+    width: 20vw;
+    background-color: #273037;
+}
+.infos{
+    padding-left: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    height: 6vw;
+    background-color: #273037;
+}
+.field{
+width: 14vw;
+background-color: #273037;
+}
+.updateInfo{
+    background-color: #273037;
+    height: 40%;
+    width: 18vw;
+    margin-top: 2vw;
+    padding-left: 2vw;
+    display: flex;
+    flex-direction:  column;
+}
+.moreinfo{
+    height: 11vw;
+    background-color: #273037;
+}
+.info-btn{
+background-color: #2984FF;
+
+margin-left: 2vw;
+}
+.textinput{
+    background-color: azure;
+margin-top: 1vw;
+    width: 14vw;
+    margin-bottom: 1vw;
+    color: #273037;
+}
+.dateinput{
+    background-color: azure;
+    height: 2vw;
+    font-size: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    width: 8vw;
+    color: #273037;
+}
+.update-btn{
+    background-color: azure;
+width: 5vw;
+height: 2vw;
+background-color: #2984FF;
+}

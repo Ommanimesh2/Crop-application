@@ -9,12 +9,13 @@ var initialState = {
   geometry: { cocoordinates: [[]] },
 }
 const changeMapData = (state = initialState, action) => {
-  console.log(addmap_data.payload.feature)
+  console.log(action.payload)
   switch (action.type) {
     case "map_data":
       return {
         ...state,
-        data: addmap_data.payload,
+        properties: { Name: action.payload.feature.properties.Name},
+        geometry: { cocoordinates: action.payload.feature.geometry.coordinates },
       }
     default:
       return state;

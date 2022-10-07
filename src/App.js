@@ -1,12 +1,13 @@
 import './App.css';
 import { useSelector, useDispatch } from 'react-redux';
-import { bindActionCreators } from '@reduxjs/toolkit';
+
 import React from 'react';
 import * as L from "leaflet";
 import addmap_data from './action';
 import Leftsidebar from './components/Leftsidebar/Leftsidebar';
 import action from "./action.js"
 import data from "./roorkee.js"
+import Loader from './components/loader/Loader';
 function App() {
   // const [mapdata,setMapdata]=useState([])
  
@@ -33,8 +34,8 @@ function App() {
 
       console.log(layer.feature.properties.Name)
       layer.on('click',(e)=>{
-        console.log(e.target.feature)
-        dispatch(addmap_data(e.target.feature))
+        // console.log(e.target.feature)
+        dispatch(addmap_data(e.target))
       })
     
     }

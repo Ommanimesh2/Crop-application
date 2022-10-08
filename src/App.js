@@ -1,15 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useContext } from 'react';
 import * as L from "leaflet";
-import * as LeafletGeotiff from "leaflet-geotiff";
-import "leaflet-geotiff/leaflet-geotiff-plotty";
-import "leaflet-geotiff/leaflet-geotiff-vector-arrows";
-import data from './roorkee.js'
-function App() {
+import data from './roorkeeData.js'
+import Leftsidebar from './components/LeftSideBar/LeftSideBar';
+import RightSideBar from './components/RightSideBar/RightSideBar';
+import { useState,useEffect } from 'react';
+import Loading from './components/Loading/Loading';
+import dataContext from './datacontext';
+import Popup from './components/Popup/Popup';
+function App(){
+  const {param,setParam,pop,setPop,setLeftDet}=useContext(dataContext)
+  const [loading, setLoading]=useState(false);
+
+  const style1={
+    display:'none'
+  }
+  const style2={
+    display:'block'
+  }
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+  }, []);
+  
  setTimeout(()=>{ 
   var map1 = L.DomUtil.get('map'); if(map1 != null){ map1._leaflet_id = null; }
  
-  var map = L.map('map').setView([30.0668,79.0193], 10);
+  var map = L.map('map').setView([29.8665,77.9060], 14);
   var googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}',{
     maxZoom: 20,
     subdomains:['mt0','mt1','mt2','mt3']
@@ -21,19 +40,30 @@ function App() {
   }).addTo(map);
   function onEachFeature(features, layer) {
     // does this feature have a property named popupContent?
-    if (layer.feature.properties && layer.feature.properties.Name) {
+    layer.on('click',(e)=>{
+     setParam(e.target.feature.properties.id)
+     setLeftDet(e.target.feature.properties)
       
-      layer.bindPopup(layer.feature.properties.Name);
-    }
+    })
   }
 },2000)
   return (
     <>
-<div style={{height:"100vh",width:"100vw"}} id="map">
-    
-</div>
+     {loading ? (<Loading/>) :
+   ( <div className="body">
+      <div className="leftsidebar"><Leftsidebar/></div>
+      <div className="rightsidebar">
+      <div style={pop ? style1 :style2} className='map' id="map">
+      
+    </div>
+    {pop ? <Popup/> :  <RightSideBar/>}
+   
+    </div>
+    </div>
+   )
+}
     </>
   );
 }
 
-export default App;
+export default (App);

@@ -1,0 +1,30 @@
+.graphcontainer{
+    display: inline-block;
+    position: relative;
+    width: 65%;
+    z-index: 0;
+    left: 0vw;
+  
+}
+.graph-logo{
+    display: flex;
+    width: 100%;
+}
+.graph-logo img{
+    padding: 40px;
+    width: 380px;
+    height: 300px;
+}
+.nodata{
+    font-family: monospace;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+}
+.ig p{
+   margin-left: 9vw;
+   font-size: 20px;
+}

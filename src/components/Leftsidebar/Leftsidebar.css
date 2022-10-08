@@ -4,16 +4,24 @@ color: rgb(241, 231, 231);
 
 }
 .container{
-    padding-left: 2vw;
-    height: 46vw;
+    height: 40vw;
     width: 25%;
 }
+.icon-container{
+    background-color: #273037;
+    width: 20vw;
+}
+.icon{
+    margin-left:0.5vw;
+    margin-top: 0.5vw;
+    height: 3vw;
+    width: 2.5vw;
+}
+
 .infocontainer{
     width: 20vw;
-    height: 20vw;
+    height: 23vw;
     background-color: #273037;
-    margin-top: 2vw;
-    margin-bottom: 1vw;
     border-radius: 0.5vw;
 }
 .img{
@@ -22,11 +30,12 @@ color: rgb(241, 231, 231);
     border: 0.3vw solid white;
 }
 .areaField{
+    padding-left: 2vw;
     display: flex;
     flex-direction: row;
     padding-top: 2vw;
     height: 6vw;
-    width: 20vw;
+    width: 18vw;
     background-color: #273037;
     
 }
@@ -48,9 +57,9 @@ background-color: #273037;
 .updateInfo{
     border-radius: 0.5vw;
     background-color:#273037;
-    height: 20vw;
+    height: 21.3vw;
     width: 18vw;
-    margin-top: 2vw;
+    
     padding-left: 2vw;
     display: flex;
     flex-direction:  column;
@@ -102,10 +111,19 @@ border-radius: 0.3vw;
     background-color: #1a72e4;
     font-weight: bolder;
 }
-.popup-container{
+.logo{
+    height: 4vw;
+    width: 4vw;
+}
+.logo-container{
+    display: flex;
+    flex-direction: row;
+    background-color: #212930;
+}
+.out-icon{
+    margin-left: 12vw;
+}
+.icon-left{
     height: 5vw;
-    width: 14vw;
-    background-color: #173b56;
-    overflow-y: scroll;
-    scrollbar-color: #6969dd;
+    width: 4vw;
 }

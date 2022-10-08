@@ -1,10 +1,36 @@
 import React from 'react'
 import './Leftsidebar.css'
-import Popup from 'reactjs-popup';
-
+import { useState } from 'react';
+import img from "./logo_2.svg"
+import Popup from '../Popup/Popup';
+import { VscMenu } from "react-icons/vsc";
+import { VscChevronLeft } from "react-icons/vsc";
+import Hamburger from './Hamburger';
 export default function Leftsidebar() {
+  const [popup, setPopup]=useState(false);
+  const [sideopen, setSideopen]=useState(false);
+const openPopup= ()=>{
+       setPopup(true);
+      
+}
+const sidemenu=()=>{
+     setSideopen(!sideopen);
+}
   return (
+   <>
+   {sideopen ?
+   <>
+ <div className="logo-container">
+    <img src={img} alt="" className='logo'/>
+   <div className="out-icon"><VscChevronLeft className='icon-left' onClick={sidemenu} /></div>
+     </div>
+     <Hamburger/>
+    </>:
+   
     <div className="container">
+      <div className="icon-container"><VscMenu onClick={sidemenu} className='icon'/>
+     
+      </div>
       <div className="infocontainer">
         < div className="areaField">
           <div className="infos">
@@ -19,12 +45,10 @@ export default function Leftsidebar() {
             <div className="moredetails">
               {/* add details */}
             </div>
-            <Popup trigger={<button className="info-btn">More Info</button>} position="top centre" >
-            <div className="popup-container">
-            co_ordinates-[ ]
-            </div>
-          </Popup>
-           
+            <button className="info-btn" onClick={openPopup}>More Info</button>
+           {popup &&
+           <Popup />
+           } 
           </div>
           </div>
         <div className="updateInfo">
@@ -37,5 +61,7 @@ export default function Leftsidebar() {
           <button className="update-btn">Update</button>
         </div>
     </div>
+}
+    </>
   )
 }

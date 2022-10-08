@@ -6,7 +6,7 @@ import Leftsidebar from './components/Leftsidebar/Leftsidebar';
 import Graph from './components/Rightside/Graph';
 import { useState,useEffect } from 'react';
 import Loading from './components/Loading/Loading';
-
+import Popup from './components/Popup/Popup';
 function App(){
   const [loading, setLoading]=useState(false);
   useEffect(() => {
@@ -42,9 +42,9 @@ function App(){
    ( <div className="body">
       <div className="leftsidebar"><Leftsidebar/></div>
       <div className="rightsidebar">
-      <div className='map' id="map">
+       <div className='map' id="map">
       
-    </div>
+    </div> 
     <Graph/>
     </div>
     </div>

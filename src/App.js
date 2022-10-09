@@ -11,7 +11,12 @@ import Popup from './components/Popup/Popup';
 function App(){
   const {param,setParam,pop,setPop,setLeftDet}=useContext(dataContext)
   const [loading, setLoading]=useState(false);
-
+  useEffect(()=>{
+    setLoading(true);
+    setTimeout(()=>{
+      setLoading(false);
+    },2400)
+  },[])
   const style1={
     display:'none'
   }
@@ -23,7 +28,8 @@ function App(){
   // }, []);
   
 useEffect(() => {
-  setLoading(true);
+  setTimeout(()=>{
+
 
 
   var map1 = L.DomUtil.get('map'); if(map1 != null){ map1._leaflet_id = null; }
@@ -54,7 +60,7 @@ useEffect(() => {
 var greenIcon = new L.Icon({
   iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-  iconSize: [45, 68],
+  iconSize: [35, 50],
   iconAnchor: [12, 41],
   popupAnchor: [1, -34],
   shadowSize: [41, 41]
@@ -93,7 +99,7 @@ var marker = L.marker([29.8665,77.9060], {icon: greenIcon},{
     })
   }
   setLoading(false);
-
+},2500)
 },[])
   
   return (

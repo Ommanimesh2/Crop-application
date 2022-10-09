@@ -4,8 +4,6 @@ import "./hamburger.css"
 const Hamburger = () => {
   return (
     <div className='ham-container'>
-    
-
      <div className="filed">Crop Monitoring</div>
      <div className="filed">Field Activity Log</div>
     <div className="footer">

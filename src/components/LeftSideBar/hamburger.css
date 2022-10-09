@@ -1,18 +1,18 @@
 .ham-container{
-    height: 43.3vw;
-    width: 20vw;
+    height: 100vh;
+    width: 40vh;
     background-color: #252b30;
-    transition: 1s;
 }
+ 
 
 .filed{
-  padding-top: 1vw;
-    margin-left: 2vw;
+  padding-top: 2vh;
+    margin-left: 6vh;
     font-size: larger;
     
 }
 .footer{
-    margin-top: 35vw;
+    margin-top: 70vh;
     font-size: larger;
-    margin-left: 3vw;
+    margin-left: 6vh;
 }

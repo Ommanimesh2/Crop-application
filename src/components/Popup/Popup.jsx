@@ -11,7 +11,7 @@ const Popup = () => {
             <div className="overlay"></div>
             <div className="modal-content">
               Details
-              <VscChromeClose style={{height:"50px",width:"50px",position:"relative",top:"2vh",left:"75vw"}} onClick={()=>setPop(false)}/>
+              <VscChromeClose style={{height:"50px",width:"50px",position:"relative",top:"2vh",left:"150vh"}} onClick={()=>setPop(false)}/>
               <div className="grid-container">
                 <div className="grid-items">
                     <div className="head">Id</div>

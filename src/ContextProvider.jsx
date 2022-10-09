@@ -10,10 +10,12 @@ const ContextProvider = (props) => {
     const [pop,setPop]=useState(false)
     const [specDetails,setSpecDetails]=useState([])
     const [leftDet,setLeftDet]=useState([])
-    
+    const [showGraphData,setShowGraphData]=useState([])
+    const [satellite,setSatellite]=useState('')
+    const [yAxis,setYAxis]=useState('')
       return (
         <div>
-          <dataContext.Provider value={{leftDet,setLeftDet,specDetails,setSpecDetails,pop,setPop,ndvi,setNdvi,dates,setDates,param,setParam,start,setStart,end,setEnd}} >
+          <dataContext.Provider value={{yAxis,setYAxis,satellite,setSatellite,showGraphData,setShowGraphData,leftDet,setLeftDet,specDetails,setSpecDetails,pop,setPop,ndvi,setNdvi,dates,setDates,param,setParam,start,setStart,end,setEnd}} >
             {props.children}
           </dataContext.Provider>
         </div>

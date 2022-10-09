@@ -10,38 +10,38 @@ body{
     }
     .icon-container{
         background-color: #273037;
-        width: 20vw;
+        width: 40vh;
     }
     .icon{
-        margin-left:0.5vw;
-        margin-top: 0.5vw;
-        height: 3vw;
-        width: 2.5vw;
+        margin-left:1vh;
+        margin-top: 1vh;
+        height: 6vh;
+        width: 5vh;
     }
     
     .infocontainer{
-        width: 20vw;
-        height: 23vw;
+        width: 40vh;
+        height: 46vh;
         background-color: #273037;
-        border-radius: 0.5vw;
+        border-radius: 1vh;
     }
     .img{
-        height: 4vw;
-        width: 6vw;
-        border: 0.3vw solid white;
+        height: 8vh;
+        width: 12vh;
+        border: 0.6vh solid white;
     }
     .areaField{
-        padding-left: 2vw;
+        padding-left: 4vh;
         display: flex;
         flex-direction: row;
-        padding-top: 2vw;
-        height: 6vw;
-        width: 18vw;
+        padding-top: 4vh;
+        height: 12vh;
+        width: 36vh;
         background-color: #273037;
         
     }
     .infos{
-        padding-left: 0.5vw;
+        padding-left: 1vh;
         display: flex;
         flex-direction: column;
         height: 19vh;
@@ -60,40 +60,52 @@ body{
   
     }
     .moredetails{
-        height: 8vw;
-        
+        height: 16vh;
     }
     .field{
         padding-bottom: 14px;
-    width: 14vw;
+    width: 28vh;
     background-color: #273037;
     }
     .updateInfo{
-        border-radius: 0.5vw;
+        border-radius: 1vh;
         background-color:#273037;
-        margin-top: 10vh;
-        width: 18vw;
-        
-        padding-left: 1vw;
+        margin-top: 6vh;
+        width: 36vh;
+        padding-left: 2vh;
         display: flex;
         flex-direction:  column;
         justify-content: center;
         align-items: center;
-        padding-top: 0.5vw;
+        padding-top: 2vh;
+    }
+    .Satellite-select{
+        text-align: center;
+        background-color: azure;
+        height: 4vh;
+        font-size: 2vh;
+        width: 100%;
+        margin-bottom: 7vh;
+        border-radius: 0;
+    }
+    .select-options{
+        background-color: #1a242c;
+        color: aliceblue;
+        font-size: 2vh;
+        padding-top: 2vh;
     }
     .moreinfo{
-        height: 9vw;
+        height: 18vh;
         background-color:  #273037;
-
     }
     .info-btn{
         color: azure;
-        margin: 0 1vw;
+        margin: 0 2vh;
         width: 90%;
-        height: 2.5vw;
+        height: 5vh;
         background-color: #2984FF;
         cursor: pointer;
-        border-radius: 0.3vw;
+        border-radius: 0.6vh;
         font-size: 18px;  
     }
     
@@ -103,39 +115,38 @@ body{
     }
     .textinput{
         background-color: azure;
-        margin-top: 1vw;
-        width: 14vw;
-        margin-bottom: 1vw;
+        margin-top: 2vh;
+        width: 28vh;
+        margin-bottom: 2vh;
         color: #273037;
     }
     .dateinput{
         text-align: center;
         background-color: azure;
-        height: 2vw;
-        font-size: 1vw;
-        margin-top: 1vw;
-        margin-bottom: 1vw;
+        height: 4vh;
+        font-size: 2vh;
+        margin-top: 0.8vh;
+        margin-bottom: 2vh;
         width: 100%;
         color: #273037;
-        
     }
     .update-btn{
         font-size: 18px;  
         color: azure;
         width: 100%;
-    height: 2.5vw;
+    height: 5vh;
     margin-top: 2vh;
     background-color: #2984FF;
     cursor: pointer;
-    border-radius: 0.3vw;
+    border-radius: 0.6vh;
     }
     .update-btn:hover{
         background-color: #1a72e4;
         font-weight: bolder;
     }
     .logo{
-        height: 4vw;
-        width: 4vw;
+        height: 8vh;
+        width: 8vh;
     }
     .logo-container{
         display: flex;
@@ -143,9 +154,9 @@ body{
         background-color: #212930;
     }
     .out-icon{
-        margin-left: 12vw;
+        margin-left: 24vh;
     }
     .icon-left{
-        height: 5vw;
-        width: 4vw;
+        height: 10vh;
+        width: 8vh;
     }

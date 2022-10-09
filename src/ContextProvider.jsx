@@ -13,9 +13,10 @@ const ContextProvider = (props) => {
     const [showGraphData,setShowGraphData]=useState([])
     const [satellite,setSatellite]=useState('')
     const [yAxis,setYAxis]=useState('')
+    const [climVars,setClimVars]=useState([])
       return (
         <div>
-          <dataContext.Provider value={{yAxis,setYAxis,satellite,setSatellite,showGraphData,setShowGraphData,leftDet,setLeftDet,specDetails,setSpecDetails,pop,setPop,ndvi,setNdvi,dates,setDates,param,setParam,start,setStart,end,setEnd}} >
+          <dataContext.Provider value={{climVars,setClimVars,yAxis,setYAxis,satellite,setSatellite,showGraphData,setShowGraphData,leftDet,setLeftDet,specDetails,setSpecDetails,pop,setPop,ndvi,setNdvi,dates,setDates,param,setParam,start,setStart,end,setEnd}} >
             {props.children}
           </dataContext.Provider>
         </div>

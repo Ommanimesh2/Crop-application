@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Loading.css"
-import Logo from './logo_2.svg'
+import Logo from './logo1.svg'
 import Typewriter from 'typewriter-effect';
 export default function Loading() {
   return (

@@ -6,6 +6,7 @@ import { useState } from 'react'
 import { VscMenu } from "react-icons/vsc";
 import { VscChevronLeft } from "react-icons/vsc";
 import img from './logo_2.svg'
+import image from './copyright.svg'
 import Popup from '../Popup/Popup'
 const LeftSideBar = () => {
 
@@ -107,10 +108,12 @@ const LeftSideBar = () => {
 
             
 
+ <div className="copyright">
+  <img src={image} alt="" />
+ </div>
             </div>
           </div>
         </div>
-
 
       }
     </>

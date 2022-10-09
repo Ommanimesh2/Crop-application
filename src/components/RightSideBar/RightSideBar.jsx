@@ -16,10 +16,11 @@ import {
 } from 'chart.js';
 import img from './log.svg'
 
-import { Line } from 'react-chartjs-2';
+import { Bar, Line } from 'react-chartjs-2';
 export default function RightSideBar() {
     const {ndvi,setNdvi,dates,setDates}=useContext(dataContext)
     ChartJS.register(
+      
         CategoryScale,
         LinearScale,
         PointElement,
@@ -93,7 +94,8 @@ export default function RightSideBar() {
             data: ndvi,
             borderColor: 'green',
             backgroundColor: 'red',
-          }]
+          }
+        ]
     
       }
   return (
@@ -107,6 +109,7 @@ export default function RightSideBar() {
       ? 
     <div className='graphcontainer'>
       <Line style={{height:"200px",width:"1200px"}} options={options} data={datad} />
+      
     </div>
       :
       <> </>}
